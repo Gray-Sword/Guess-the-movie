@@ -1,4 +1,3 @@
-// Movie Database with Categories
 const movies = [
     { emoji: "🦁👑", title: "The Lion King", difficulty: "easy" },
     { emoji: "🚢💔", title: "Titanic", difficulty: "easy" },
@@ -113,7 +112,6 @@ function handleGuess(letter, button) {
     correctLetters.push(letter);
     updateMovieNameLine();
 
-    // Check win condition
     const uniqueLetters = new Set(currentMovie.title.toLowerCase().replace(/\s/g, ""));
     const correctUniqueLetters = new Set(correctLetters);
     
@@ -157,7 +155,6 @@ document.getElementById("hint-button").onclick = () => {
         document.getElementById("score").textContent = score;
         updateMovieNameLine();
         
-        // Find and hide the corresponding keyboard button
         const buttons = document.querySelectorAll("#keyboard button");
         buttons.forEach(button => {
             if (button.textContent.toLowerCase() === hintLetter) {
@@ -173,5 +170,4 @@ document.getElementById("hint-button").onclick = () => {
 
 document.getElementById("try-again-button").onclick = startNewLevel;
 
-// Start Game
 startNewLevel();
