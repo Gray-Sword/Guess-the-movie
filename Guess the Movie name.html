@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Movie Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Guess the Movie name style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Guess the Movie</h1>
+        <div id="score-display">Score: <span id="score">0</span></div>
+        <div id="difficulty-display">Difficulty: <span id="current-difficulty">Easy</span></div>
+        <div id="emoji-display"></div>
+        <div id="movie-name"></div>
+        <div id="keyboard"></div>
+        <button id="hint-button">💡 Hint (Cost: 200 Points)</button>
+        <p>Tries Left: <span id="tries-left">5</span></p>
+        <p id="message"></p>
+        <div id="game-over-message" class="hidden">
+            <p>Go and watch this movie now 😤</p>
+        </div>
+        <button id="try-again-button">Try Again</button>
+    </div>
+    <script src="Guess the Movie name script.js"></script>
+</body>
+</html>
